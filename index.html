@@ -6,35 +6,73 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
-
+  
   <!--
     - favicon
   -->
   <link rel="shortcut icon" href="./assets/images/icoo.png" type="image/x-icon">
 
+
   <!--
     - custom css link
   -->
   <link rel="stylesheet" href="./assets/css/style.css">
-
+  
+ 
   <!--
     - google font link
   -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-  
 </head>
 
 <body>
-  
 
+  <div class="banner card text-bg-dark">
+    <h5 class="card-title">W E L C O M E</h5>
+    <div class="card-img-overlay">
+      <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text" style="color: bisque;">I'll never share your email with anyone else.</div>
+        </div>
+        <button type="submit" class="btn btn-danger" id="submitButton">Submit</button>
+      </form>
+      <!-- <button class="close">X</button> -->
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  <main>
+    <!-- <div class="banner card text-bg-dark">
+      <img src="./assets/images/card.jpg" class="card-img" alt="...">
+      <div class="card-img-overlay">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small>Last updated 3 mins ago</small></p>
+        
+      </div>
+    </div> -->
+    
+    <!-- <p>This is my banner.</p> -->
+  
   <!--
     - #MAIN
   -->
 
-  <main>
-
+ 
+        
     <!--
       - #SIDEBAR
     -->
@@ -92,7 +130,7 @@
             <div class="contact-info">
               <p class="contact-title">Phone</p>
 
-              <a href="tel:+918439712729" class="contact-link">+91 (843) 971-2729</a>
+              <a href="tel:+12133522795" class="contact-link">+91 (843) 971-2729</a>
             </div>
 
           </li>
@@ -162,12 +200,14 @@
     <!--
       - #main-content
     -->
+   
 
     <div class="main-content">
 
       <!--
         - #NAVBAR
       -->
+
 
       <nav class="navbar">
 
@@ -341,7 +381,7 @@
                 <p>
                   Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
                   lot of experience
-                  and is very concerned about the needs of the client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
                   consectetur adipiscing
                   elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
                 </p>
@@ -351,7 +391,8 @@
 
           </section>
 
-        </div> -->
+        </div>
+        
 
 
         <!--
@@ -453,7 +494,7 @@
       <article class="resume" data-page="resume">
 
         <header>
-          <h2  class="h2 article-title"><a href="https://drive.google.com/file/d/13i8SItQ8-nXP-z0MEChbge-euEVRrfED/view" style="color: white; text-decoration: none;" onmouseover="this.style.color='blue';" onmouseout="this.style.color='white';">Resume</a></h2>
+          <h2 class="h2 article-title">Resume</h2>
         </header>
 
         <section class="timeline">
@@ -677,7 +718,10 @@ of instructions to walk you through a live, real-world, and scenario-based use c
 
 
 
-    
+      <!--
+        -------------------------------------------------------------------------
+        - #PORTFOLIO
+      -->
 
       <article class="milestones" data-page="milestones">
         <header>
@@ -686,31 +730,31 @@ of instructions to walk you through a live, real-world, and scenario-based use c
 
         <section class="projects">
 
-<!--           <ul class="filter-list">
+          <!-- <ul class="filter-list">
 
             <li class="filter-item">
               <button class="active" data-filter-btn>All</button>
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Competitive Programming</button>
+              <button data-filter-btn>Web design</button>
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Rounds</button>
+              <button data-filter-btn>Applications</button>
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Ranks</button>
+              <button data-filter-btn>Web development</button>
             </li>
 
-          </ul>  -->
+          </ul> -->
 
           <div class="filter-select-box">
 
             <button class="filter-select" data-select>
 
-              <div class="select-value" data-selecct-value>Will update soon....</div>
+              <div class="select-value" data-selecct-value>Select category</div>
 
               <div class="select-icon">
                 <ion-icon name="chevron-down"></ion-icon>
@@ -718,31 +762,31 @@ of instructions to walk you through a live, real-world, and scenario-based use c
 
             </button>
 
-<!--             <ul class="select-list">
+            <ul class="select-list">
 
               <li class="select-item">
                 <button data-select-item>All</button>
               </li>
 
               <li class="select-item">
-                <button data-select-item>Competitive Programming</button>
+                <button data-select-item>Web design</button>
               </li>
 
               <li class="select-item">
-                <button data-select-item>Rounds</button>
+                <button data-select-item>Applications</button>
               </li>
 
               <li class="select-item">
-                <button data-select-item>Ranks</button>
+                <button data-select-item>Web development</button>
               </li>
 
-            </ul> -->
+            </ul>
 
           </div>
 
           <ul class="project-list">
 
-            <li class="project-item  active" data-filter-item data-category="Competitive Programming">
+            <li class="project-item  active" data-filter-item data-category="web development">
               <a href="https://github.com/mikramrihan/ACM-ICPC-2022/blob/main/2022-ICPC%20Asia%20Kanpur-Mr.%20MOHD%20IKRAM-HONORABLE.pdf">
 
                 <figure class="project-img">
@@ -760,7 +804,7 @@ of instructions to walk you through a live, real-world, and scenario-based use c
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="Competitive Programming">
+            <li class="project-item  active" data-filter-item data-category="web development">
               <a href="https://codingcompetitions.withgoogle.com/kickstart/round/000000000043585c">
 
                 <figure class="project-img">
@@ -778,7 +822,7 @@ of instructions to walk you through a live, real-world, and scenario-based use c
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="Rounds">
+            <li class="project-item  active" data-filter-item data-category="web design">
               <a href="https://www.codechef.com/users/rihan1908">
 
                 <figure class="project-img">
@@ -796,7 +840,7 @@ of instructions to walk you through a live, real-world, and scenario-based use c
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="Ranks">
+            <li class="project-item  active" data-filter-item data-category="applications">
               <a href="https://codeforces.com/profile/mohdikram">
 
                 <figure class="project-img">
@@ -814,7 +858,7 @@ of instructions to walk you through a live, real-world, and scenario-based use c
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="Ranks">
+            <li class="project-item  active" data-filter-item data-category="web design">
               <a href="https://www.codechef.com/users/rihan1908">
 
                 <figure class="project-img">
@@ -832,7 +876,7 @@ of instructions to walk you through a live, real-world, and scenario-based use c
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="Ranks">
+            <li class="project-item  active" data-filter-item data-category="web design">
               <a href="https://codeforces.com/profile/mohdikram">
 
                 <figure class="project-img">
@@ -850,7 +894,7 @@ of instructions to walk you through a live, real-world, and scenario-based use c
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="Rounds">
+            <li class="project-item  active" data-filter-item data-category="web development">
               <a href="https://leetcode.com/mohdikram/">
 
                 <figure class="project-img">
@@ -868,16 +912,50 @@ of instructions to walk you through a live, real-world, and scenario-based use c
               </a>
             </li>
 
-            
+            <!-- <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
 
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
 
-          </ul>
+                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Task Manager</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Arrival</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+          </ul> -->
 
         </section>
 
       </article>
 
 
+<!-- --------------------/--------------------------------------------- -->
 
 
       <!--
@@ -1000,7 +1078,7 @@ inform the user on the basis of a 91.2% Accuracy based predictive analysis Repor
                   <p class="blog-text">
                     An application program that understands natural language voice commands and completes tasks for the user and
                     Provides Administrative Service to the User. Automate Tasks with One Voice Command include Launching App, Access Date-Time, Weather and Forecasting,
-                    reading text or email messages, Temperature, and Humidity, Google News, etc                  </p>
+                    reading text or email messages, Temperature and Humidity, Google News, etc                  </p>
 
                 </div>
 
@@ -1320,6 +1398,7 @@ inform the user on the basis of a 91.2% Accuracy based predictive analysis Repor
   <!--
     - ionicon link
   -->
+  
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
