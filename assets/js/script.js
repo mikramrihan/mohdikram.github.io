@@ -172,3 +172,46 @@ function sendEmail(event) {
 
   window.location.href = mailtoLink;
 }
+
+
+
+// const banner = document.querySelector('.banner');
+
+// if (!localStorage.getItem('closedBanner')) {
+//   banner.style.display = 'block';
+// }
+
+// banner.querySelector('.close').addEventListener('click', () => {
+//   localStorage.setItem('closedBanner', 'true');
+//   banner.style.display = 'none';
+// });
+
+const banner = document.querySelector('.banner');
+const emailInput = document.querySelector('#exampleInputEmail1');
+const submitButton = document.querySelector('#submitButton');
+
+// Disable the submit button by default
+submitButton.disabled = true;
+
+// Add an event listener to the email input field
+emailInput.addEventListener('input', () => {
+  // Check if the email is valid
+  const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  const isValidEmail = emailRegex.test(emailInput.value);
+
+  // Enable the submit button if the email is valid
+  submitButton.disabled = !isValidEmail;
+});
+
+// Add an event listener to the submit button
+submitButton.addEventListener('click', (event) => {
+  // Prevent the default form submission behavior
+  event.preventDefault();
+
+  // Hide the banner
+  localStorage.setItem('closedBanner', 'true');
+  banner.style.display = 'none';
+
+  // Submit the form using JavaScript
+  // TODO: Implement this function
+});
